@@ -1,0 +1,36 @@
+# Macro file for the initialization of example B4
+# in interactive session
+#
+# Set some default verbose
+#
+
+/CRY/input returnMuons 1
+/CRY/input returnNeutrons 0
+/CRY/input returnProtons 0
+/CRY/input returnGammas 0
+/CRY/input returnPions 0
+/CRY/input returnKaons 0
+/CRY/input date 9-02-2016
+/CRY/input latitude 33.6
+/CRY/input altitude 0
+/CRY/input subboxLength 1
+/CRY/update
+
+
+/control/verbose 2
+/control/saveHistory
+/run/verbose 2
+#
+# Change the default number of threads (in multi-threaded mode)
+#/run/numberOfThreads 4
+#
+# Initialize kernel
+/run/initialize
+/event/verbose 0
+/run/verbose 0
+
+
+# Visualization setting
+
+/control/execute vis.mac
+#/run/beamOn 500

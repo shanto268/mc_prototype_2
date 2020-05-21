@@ -1,0 +1,41 @@
+#!/bin/bash
+
+
+#  drop_from_path taken from /root/build/bin/thisroot.sh
+drop_from_path()
+{
+   # Assert that we got enough arguments
+   if test $# -ne 2 ; then
+      echo "drop_from_path: needs 2 arguments"
+      return 1
+   fi
+
+   local p=$1
+   local drop=$2
+
+   newpath=`echo $p | sed -e "s;:${drop}:;:;g" \
+                          -e "s;:${drop}\$;;g"   \
+                          -e "s;^${drop}:;;g"   \
+                          -e "s;^${drop}\$;;g"`
+}
+
+export CRYHOME=/Users/louyjppdk/hep/cry/cry_v1.7
+export CRYDATAPATH=/Users/louyjppdk/hep/cry/cry_v1.7/data
+
+#  setup GEANT4 environment
+. /Users/louyjppdk/hep/g4/geant4.10.03.p03-install/bin/geant4.sh
+
+export G4BASE=Users/louyjppdk/hep/g4/geant4.10.03.p03/source
+export G4INSTALL=/Users/louyjppdk/hep/g4/geant4.10.03.p03-install/share/Geant4-10.3.3/geant4make
+
+source /Users/louyjppdk/hep/g4/geant4.10.03.p03-install/share/Geant4-10.3.3/geant4make/geant4make.sh
+export G4BIN="$PWD"
+
+export LD_LIBRARY_PATH=/Users/louyjppdk/hep/g4/geant4.10.03.p03-install/lib
+export DYLD_LIBRARY_PATH=/Users/louyjppdk/hep/g4/geant4.10.03.p03-install/lib
+export SHLIB_PATH=/Users/louyjppdk/hep/g4/geant4.10.03.p03-install/lib
+export LIBPATH=/Users/louyjppdk/hep/g4/geant4.10.03.p03-install/lib
+
+#  setup ROOT environment
+source /Users/louyjppdk/hep/root/v6.11.03/build/bin/thisroot.sh
+

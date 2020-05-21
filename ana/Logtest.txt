@@ -1,0 +1,512 @@
+Input file name=muonTree01.root
+Output file name=hist_muon01.root
+******************************************************************************
+*Tree    :tree      : Cosmic Muon Tree                                       *
+*Entries :      315 : Total =          172461 bytes  File  Size =      55850 *
+*        :          : Tree compression factor =   2.79                       *
+******************************************************************************
+*Br    0 :trigger   : trigger/I                                              *
+*Entries :      315 : Total  Size=       1827 bytes  File Size  =        108 *
+*Baskets :        1 : Basket Size=      32000 bytes  Compression=  12.35     *
+*............................................................................*
+*Br    1 :nGenPar   : nGenPar/I                                              *
+*Entries :      315 : Total  Size=       1827 bytes  File Size  =        173 *
+*Baskets :        1 : Basket Size=      32000 bytes  Compression=   7.71     *
+*............................................................................*
+*Br    2 :GenParId  : GenParId[nGenPar]/I                                    *
+*Entries :      315 : Total  Size=       3300 bytes  File Size  =        778 *
+*Baskets :        1 : Basket Size=      32000 bytes  Compression=   3.48     *
+*............................................................................*
+*Br    3 :GenParTk  : GenParTk[nGenPar]/I                                    *
+*Entries :      315 : Total  Size=       3300 bytes  File Size  =        652 *
+*Baskets :        1 : Basket Size=      32000 bytes  Compression=   4.16     *
+*............................................................................*
+*Br    4 :GenParHit : GenParHit[nGenPar]/I                                   *
+*Entries :      315 : Total  Size=       3305 bytes  File Size  =        554 *
+*Baskets :        1 : Basket Size=      32000 bytes  Compression=   4.90     *
+*............................................................................*
+*Br    5 :GenParPx  : GenParPx[nGenPar]/F                                    *
+*Entries :      315 : Total  Size=       3307 bytes  File Size  =       1929 *
+*Baskets :        1 : Basket Size=      32000 bytes  Compression=   1.41     *
+*............................................................................*
+*Br    6 :GenParPy  : GenParPy[nGenPar]/F                                    *
+*Entries :      315 : Total  Size=       3307 bytes  File Size  =       1962 *
+*Baskets :        1 : Basket Size=      32000 bytes  Compression=   1.38     *
+*............................................................................*
+*Br    7 :GenParPz  : GenParPz[nGenPar]/F                                    *
+*Entries :      315 : Total  Size=       3307 bytes  File Size  =       1922 *
+*Baskets :        1 : Basket Size=      32000 bytes  Compression=   1.41     *
+*............................................................................*
+*Br    8 :GenParP   : GenParP[nGenPar]/F                                     *
+*Entries :      315 : Total  Size=       3302 bytes  File Size  =       1924 *
+*Baskets :        1 : Basket Size=      32000 bytes  Compression=   1.41     *
+*............................................................................*
+*Br    9 :GenParM   : GenParM[nGenPar]/F                                     *
+*Entries :      315 : Total  Size=       3302 bytes  File Size  =        562 *
+*Baskets :        1 : Basket Size=      32000 bytes  Compression=   4.82     *
+*............................................................................*
+*Br   10 :GenParVx  : GenParVx[nGenPar]/F                                    *
+*Entries :      315 : Total  Size=       3307 bytes  File Size  =       1902 *
+*Baskets :        1 : Basket Size=      32000 bytes  Compression=   1.43     *
+*............................................................................*
+*Br   11 :GenParVy  : GenParVy[nGenPar]/F                                    *
+*Entries :      315 : Total  Size=       3307 bytes  File Size  =       1791 *
+*Baskets :        1 : Basket Size=      32000 bytes  Compression=   1.51     *
+*............................................................................*
+*Br   12 :GenParVz  : GenParVz[nGenPar]/F                                    *
+*Entries :      315 : Total  Size=       3307 bytes  File Size  =       1790 *
+*Baskets :        1 : Basket Size=      32000 bytes  Compression=   1.51     *
+*............................................................................*
+*Br   13 :nBar      : nBar/I                                                 *
+*Entries :      315 : Total  Size=       1812 bytes  File Size  =        105 *
+*Baskets :        1 : Basket Size=      32000 bytes  Compression=  12.68     *
+*............................................................................*
+*Br   14 :EdepS1    : EdepS1[nBar]/F                                         *
+*Entries :      315 : Total  Size=      14517 bytes  File Size  =       2925 *
+*Baskets :        1 : Basket Size=      32000 bytes  Compression=   4.77     *
+*............................................................................*
+*Br   15 :EdepS2    : EdepS2[nBar]/F                                         *
+*Entries :      315 : Total  Size=      14517 bytes  File Size  =       3147 *
+*Baskets :        1 : Basket Size=      32000 bytes  Compression=   4.43     *
+*............................................................................*
+*Br   16 :EdepS3    : EdepS3[nBar]/F                                         *
+*Entries :      315 : Total  Size=      14517 bytes  File Size  =       2995 *
+*Baskets :        1 : Basket Size=      32000 bytes  Compression=   4.65     *
+*............................................................................*
+*Br   17 :EdepS4    : EdepS4[nBar]/F                                         *
+*Entries :      315 : Total  Size=      14517 bytes  File Size  =       3056 *
+*Baskets :        1 : Basket Size=      32000 bytes  Compression=   4.56     *
+*............................................................................*
+*Br   18 :nTray     : nTray/I                                                *
+*Entries :      315 : Total  Size=       1817 bytes  File Size  =        106 *
+*Baskets :        1 : Basket Size=      32000 bytes  Compression=  12.57     *
+*............................................................................*
+*Br   19 :EdepT1    : EdepT1/F                                               *
+*Entries :      315 : Total  Size=       1822 bytes  File Size  =       1196 *
+*Baskets :        1 : Basket Size=      32000 bytes  Compression=   1.11     *
+*............................................................................*
+*Br   20 :EdepT2    : EdepT2/F                                               *
+*Entries :      315 : Total  Size=       1822 bytes  File Size  =       1190 *
+*Baskets :        1 : Basket Size=      32000 bytes  Compression=   1.12     *
+*............................................................................*
+*Br   21 :EdepT3    : EdepT3/F                                               *
+*Entries :      315 : Total  Size=       1822 bytes  File Size  =       1191 *
+*Baskets :        1 : Basket Size=      32000 bytes  Compression=   1.12     *
+*............................................................................*
+*Br   22 :EdepT4    : EdepT4/F                                               *
+*Entries :      315 : Total  Size=       1822 bytes  File Size  =       1196 *
+*Baskets :        1 : Basket Size=      32000 bytes  Compression=   1.11     *
+*............................................................................*
+*Br   23 :nHitsR1   : nHitsR1/I                                              *
+*Entries :      315 : Total  Size=       1827 bytes  File Size  =        171 *
+*Baskets :        1 : Basket Size=      32000 bytes  Compression=   7.80     *
+*............................................................................*
+*Br   24 :HitsR1Id  : HitsR1Id[nHitsR1]/I                                    *
+*Entries :      315 : Total  Size=       3296 bytes  File Size  =        774 *
+*Baskets :        1 : Basket Size=      32000 bytes  Compression=   3.50     *
+*............................................................................*
+*Br   25 :HitsR1Tk  : HitsR1Tk[nHitsR1]/I                                    *
+*Entries :      315 : Total  Size=       3296 bytes  File Size  =        651 *
+*Baskets :        1 : Basket Size=      32000 bytes  Compression=   4.16     *
+*............................................................................*
+*Br   26 :HitsR1Hit : HitsR1Hit[nHitsR1]/I                                   *
+*Entries :      315 : Total  Size=       3301 bytes  File Size  =        554 *
+*Baskets :        1 : Basket Size=      32000 bytes  Compression=   4.89     *
+*............................................................................*
+*Br   27 :HitsR1Px  : HitsR1Px[nHitsR1]/F                                    *
+*Entries :      315 : Total  Size=       3303 bytes  File Size  =       1926 *
+*Baskets :        1 : Basket Size=      32000 bytes  Compression=   1.41     *
+*............................................................................*
+*Br   28 :HitsR1Py  : HitsR1Py[nHitsR1]/F                                    *
+*Entries :      315 : Total  Size=       3303 bytes  File Size  =       1963 *
+*Baskets :        1 : Basket Size=      32000 bytes  Compression=   1.38     *
+*............................................................................*
+*Br   29 :HitsR1Pz  : HitsR1Pz[nHitsR1]/F                                    *
+*Entries :      315 : Total  Size=       3303 bytes  File Size  =       1920 *
+*Baskets :        1 : Basket Size=      32000 bytes  Compression=   1.41     *
+*............................................................................*
+*Br   30 :HitsR1P   : HitsR1P[nHitsR1]/F                                     *
+*Entries :      315 : Total  Size=       3298 bytes  File Size  =       1922 *
+*Baskets :        1 : Basket Size=      32000 bytes  Compression=   1.41     *
+*............................................................................*
+*Br   31 :HitsR1M   : HitsR1M[nHitsR1]/F                                     *
+*Entries :      315 : Total  Size=       3298 bytes  File Size  =        563 *
+*Baskets :        1 : Basket Size=      32000 bytes  Compression=   4.81     *
+*............................................................................*
+*Br   32 :HitsR1Vx  : HitsR1Vx[nHitsR1]/F                                    *
+*Entries :      315 : Total  Size=       3303 bytes  File Size  =       1956 *
+*Baskets :        1 : Basket Size=      32000 bytes  Compression=   1.38     *
+*............................................................................*
+*Br   33 :HitsR1Vy  : HitsR1Vy[nHitsR1]/F                                    *
+*Entries :      315 : Total  Size=       3303 bytes  File Size  =       1953 *
+*Baskets :        1 : Basket Size=      32000 bytes  Compression=   1.39     *
+*............................................................................*
+*Br   34 :HitsR1Vz  : HitsR1Vz[nHitsR1]/F                                    *
+*Entries :      315 : Total  Size=       3303 bytes  File Size  =       1953 *
+*Baskets :        1 : Basket Size=      32000 bytes  Compression=   1.39     *
+*............................................................................*
+*Br   35 :nMuons    : nMuons/I                                               *
+*Entries :      315 : Total  Size=       1822 bytes  File Size  =        156 *
+*Baskets :        1 : Basket Size=      32000 bytes  Compression=   8.54     *
+*............................................................................*
+*Br   36 :MuonId    : MuonId[nMuons]/I                                       *
+*Entries :      315 : Total  Size=       1986 bytes  File Size  =        200 *
+*Baskets :        1 : Basket Size=      32000 bytes  Compression=   7.05     *
+*............................................................................*
+*Br   37 :MuonTk    : MuonTk[nMuons]/I                                       *
+*Entries :      315 : Total  Size=       1986 bytes  File Size  =        193 *
+*Baskets :        1 : Basket Size=      32000 bytes  Compression=   7.30     *
+*............................................................................*
+*Br   38 :MuonHit   : MuonHit[nMuons]/I                                      *
+*Entries :      315 : Total  Size=       1991 bytes  File Size  =        184 *
+*Baskets :        1 : Basket Size=      32000 bytes  Compression=   7.66     *
+*............................................................................*
+*Br   39 :MuonPxE   : MuonPxE[nMuons]/F                                      *
+*Entries :      315 : Total  Size=       1998 bytes  File Size  =        256 *
+*Baskets :        1 : Basket Size=      32000 bytes  Compression=   5.51     *
+*............................................................................*
+*Br   40 :MuonPyE   : MuonPyE[nMuons]/F                                      *
+*Entries :      315 : Total  Size=       1998 bytes  File Size  =        255 *
+*Baskets :        1 : Basket Size=      32000 bytes  Compression=   5.53     *
+*............................................................................*
+*Br   41 :MuonPzE   : MuonPzE[nMuons]/F                                      *
+*Entries :      315 : Total  Size=       1998 bytes  File Size  =        256 *
+*Baskets :        1 : Basket Size=      32000 bytes  Compression=   5.51     *
+*............................................................................*
+*Br   42 :MuonPE    : MuonPE[nMuons]/F                                       *
+*Entries :      315 : Total  Size=       1993 bytes  File Size  =        252 *
+*Baskets :        1 : Basket Size=      32000 bytes  Compression=   5.59     *
+*............................................................................*
+*Br   43 :MuonME    : MuonME[nMuons]/F                                       *
+*Entries :      315 : Total  Size=       1993 bytes  File Size  =        189 *
+*Baskets :        1 : Basket Size=      32000 bytes  Compression=   7.46     *
+*............................................................................*
+*Br   44 :MuonVxE   : MuonVxE[nMuons]/F                                      *
+*Entries :      315 : Total  Size=       1998 bytes  File Size  =        253 *
+*Baskets :        1 : Basket Size=      32000 bytes  Compression=   5.57     *
+*............................................................................*
+*Br   45 :MuonVyE   : MuonVyE[nMuons]/F                                      *
+*Entries :      315 : Total  Size=       1998 bytes  File Size  =        255 *
+*Baskets :        1 : Basket Size=      32000 bytes  Compression=   5.53     *
+*............................................................................*
+*Br   46 :MuonVzE   : MuonVzE[nMuons]/F                                      *
+*Entries :      315 : Total  Size=       1998 bytes  File Size  =        216 *
+*Baskets :        1 : Basket Size=      32000 bytes  Compression=   6.53     *
+*............................................................................*
+*Br   47 :MuonLength : MuonLength[nMuons]/F                                  *
+*Entries :      315 : Total  Size=       2013 bytes  File Size  =        256 *
+*Baskets :        1 : Basket Size=      32000 bytes  Compression=   5.52     *
+*............................................................................*
+*Br   48 :MuonEdep  : MuonEdep[nMuons]/F                                     *
+*Entries :      315 : Total  Size=       2003 bytes  File Size  =        254 *
+*Baskets :        1 : Basket Size=      32000 bytes  Compression=   5.56     *
+*............................................................................*
+nentries  315
+Slope of X=-0.365447
+Slope of X=0.275049
+Slope of X=0.0916829
+Slope of X=-0.140967
+Slope of X=-0.0758984
+Slope of X=-0.191545
+ E 7 tt2 11.8705 t2 11.8705 tt4 11.8573 t4 14.4324
+Slope of X=-0.124793
+Slope of X=0.183366
+Slope of X=-0.167402
+Slope of X=0.182164
+Slope of X=-0.163613
+Slope of X=0.183366
+Slope of X=0.412573
+ E 14 tt2 10.4027 t2 10.4027 tt4 0 t4 0
+Slope of X=0.137524
+Slope of X=0.0831456
+Slope of X=-0.229207
+ E 17 tt2 0 t2 0 tt4 9.26006 t4 9.26006
+Slope of X=-0.342879
+Slope of X=0.412573
+ E 19 tt2 9.78353 t2 9.78353 tt4 0 t4 0
+Slope of X=-0.275049
+Slope of X=0.137524
+ E 21 tt2 9.72128 t2 9.72128 tt4 9.49523 t4 9.49523
+Slope of X=-0.0458415
+ E 22 tt2 9.6758 t2 9.6758 tt4 8.53367 t4 8.53367
+Slope of X=0.0820224
+ E 23 tt2 9.3992 t2 9.3992 tt4 9.93778 t4 9.93778
+Slope of X=-0.123063
+ E 24 tt2 0 t2 0 tt4 6.2902 t4 9.18887
+Slope of X=0.366732
+Slope of X=0.34269
+Slope of X=-0.183366
+ E 27 tt2 0 t2 0 tt4 10.0848 t4 10.0848
+Slope of X=-0.239369
+ E 28 tt2 9.5692 t2 9.5692 tt4 7.01105 t4 9.00785
+Slope of X=0.176571
+Slope of X=0.32089
+ E 30 tt2 9.31922 t2 9.31922 tt4 0 t4 0
+Slope of X=0.0458415
+Slope of X=0.0458415
+ E 32 tt2 9.69686 t2 9.69686 tt4 0 t4 0
+Slope of X=-0.163427
+Slope of X=-0.229207
+Slope of X=-0.137524
+ E 35 tt2 9.33215 t2 9.33215 tt4 8.65294 t4 8.65294
+Slope of X=-0.366732
+ E 36 tt2 0 t2 0 tt4 9.10061 t4 9.10061
+Slope of X=0.0458415
+Slope of X=-0.137524
+ E 38 tt2 9.12763 t2 9.12763 tt4 9.10452 t4 9.10452
+Slope of X=-0.0916829
+ E 39 tt2 9.08939 t2 9.08939 tt4 8.51065 t4 8.51065
+Slope of X=0.225987
+Slope of X=0.0916829
+Slope of X=-0.332474
+ E 42 tt2 0 t2 0 tt4 7.2988 t4 9.76686
+Slope of X=0.0822748
+Slope of X=-0.229207
+ E 44 tt2 0 t2 0 tt4 9.81373 t4 9.81373
+Slope of X=0.193449
+Slope of X=0.137524
+Slope of X=-0.243266
+Slope of X=-0.282181
+ E 48 tt2 9.10821 t2 9.10821 tt4 7.69996 t4 9.11873
+Slope of X=0.137524
+Slope of X=-0.287734
+Slope of X=-0.0458415
+Slope of X=-0
+ E 52 tt2 9.21931 t2 9.21931 tt4 8.6913 t4 8.6913
+Slope of X=-0
+ E 53 tt2 9.08903 t2 9.08903 tt4 8.93769 t4 8.93769
+Slope of X=-0.412573
+ E 54 tt2 0 t2 0 tt4 8.9719 t4 8.9719
+Slope of X=-0
+Slope of X=-0.237306
+Slope of X=-0.275049
+Slope of X=-0.279766
+Slope of X=0.137524
+Slope of X=-0.150073
+Slope of X=-0.137524
+ E 61 tt2 9.473 t2 9.473 tt4 9.02301 t4 9.02301
+Slope of X=-0.366732
+ E 62 tt2 9.19454 t2 9.19454 tt4 9.53659 t4 9.53659
+Slope of X=-0
+Slope of X=-0.271234
+ E 64 tt2 10.0411 t2 10.0411 tt4 8.6423 t4 9.42673
+Slope of X=0.137524
+ E 65 tt2 9.16301 t2 9.16301 tt4 8.94484 t4 8.94484
+Slope of X=0.19688
+Slope of X=0.183366
+ E 67 tt2 9.28945 t2 9.28945 tt4 8.79101 t4 8.79101
+Slope of X=0.229207
+Slope of X=0.229207
+ E 69 tt2 9.16904 t2 9.16904 tt4 8.92721 t4 8.92721
+Slope of X=-0.229207
+Slope of X=0.32089
+Slope of X=-0.290368
+Slope of X=-0.275049
+Slope of X=-0.0916829
+ E 74 tt2 9.3249 t2 9.3249 tt4 8.6593 t4 8.6593
+Slope of X=0.0916829
+ E 75 tt2 9.37402 t2 9.37402 tt4 8.84432 t4 8.84432
+Slope of X=0.229207
+Slope of X=-0.366732
+ E 77 tt2 9.21059 t2 9.21059 tt4 9.86239 t4 9.86239
+Slope of X=-0.234085
+Slope of X=0.275049
+ E 79 tt2 9.95719 t2 9.95719 tt4 0 t4 0
+Slope of X=-0
+Slope of X=0.25925
+ E 81 tt2 9.05726 t2 9.05726 tt4 5.96202 t4 9.0972
+Slope of X=-0.229207
+ E 82 tt2 9.27805 t2 9.27805 tt4 8.21453 t4 8.21453
+Slope of X=-0.287955
+ E 83 tt2 9.22447 t2 9.22447 tt4 6.51442 t4 9.06722
+Slope of X=-0
+ E 84 tt2 9.21054 t2 9.21054 tt4 9.66855 t4 9.66855
+Slope of X=0.32089
+ E 85 tt2 10.6602 t2 10.6602 tt4 0 t4 0
+Slope of X=-0.396639
+ E 86 tt2 0 t2 0 tt4 5.9671 t4 9.14642
+Slope of X=-0.229207
+ E 87 tt2 9.47273 t2 9.47273 tt4 9.64107 t4 9.64107
+Slope of X=0.137524
+Slope of X=-0.256211
+Slope of X=-0.284731
+Slope of X=-0.0458415
+Slope of X=-0.0916829
+Slope of X=0.0959706
+Slope of X=-0.0916829
+Slope of X=0.0458415
+Slope of X=-0
+Slope of X=0.128948
+Slope of X=0.275049
+Slope of X=-0.32089
+ E 99 tt2 9.38349 t2 9.38349 tt4 9.06439 t4 9.06439
+Slope of X=0.137524
+Slope of X=-0.275049
+Slope of X=0.137524
+ E 102 tt2 9.08587 t2 9.08587 tt4 0 t4 0
+Slope of X=-0.0741351
+ E 103 tt2 9.59334 t2 11.0187 tt4 9.40243 t4 12.5942
+Slope of X=0.137524
+ E 104 tt2 9.23033 t2 9.23033 tt4 8.79415 t4 8.79415
+Slope of X=-0
+Slope of X=0.229207
+ E 106 tt2 10.9285 t2 10.9285 tt4 11.9136 t4 11.9136
+Slope of X=0.222907
+ E 107 tt2 9.54982 t2 9.54982 tt4 0 t4 2.1404
+Slope of X=-0.229207
+Slope of X=0.0458415
+Slope of X=0.229207
+Slope of X=0.248132
+ E 111 tt2 9.19537 t2 9.19537 tt4 5.43738 t4 9.26017
+Slope of X=0.0458415
+ E 112 tt2 9.35118 t2 9.35118 tt4 9.41306 t4 9.41306
+Slope of X=-0.183366
+ E 113 tt2 9.78767 t2 9.78767 tt4 8.95128 t4 8.95128
+Slope of X=0.0224244
+Slope of X=0.0916829
+ E 115 tt2 9.0137 t2 9.0137 tt4 8.50704 t4 8.50704
+Slope of X=0.137524
+Slope of X=-0.110699
+ E 117 tt2 9.15465 t2 9.15465 tt4 8.72959 t4 18.5104
+Slope of X=0.183366
+ E 118 tt2 9.59108 t2 9.59108 tt4 8.73649 t4 8.73649
+Slope of X=-0.270235
+Slope of X=0.0458415
+Slope of X=0.395234
+Slope of X=-0.278632
+Slope of X=-0.108984
+Slope of X=-0.32089
+ E 124 tt2 9.55374 t2 9.55374 tt4 8.95254 t4 8.95254
+Slope of X=-0.319158
+Slope of X=-0.275049
+Slope of X=-0.183366
+Slope of X=0.0366778
+Slope of X=-0.0458415
+Slope of X=-0.277708
+Slope of X=0.229207
+ E 131 tt2 9.39301 t2 9.39301 tt4 9.2171 t4 9.2171
+Slope of X=0.137524
+ E 132 tt2 9.19562 t2 9.19562 tt4 8.67675 t4 8.67675
+Slope of X=-0.0532672
+ E 133 tt2 9.48853 t2 9.48853 tt4 7.17819 t4 8.56572
+Slope of X=-0.260496
+ E 134 tt2 9.39219 t2 9.39219 tt4 5.92035 t4 8.67406
+Slope of X=0.152589
+ E 135 tt2 9.97646 t2 9.97646 tt4 6.07003 t4 9.04116
+Slope of X=-0.229207
+Slope of X=-0.024042
+ E 137 tt2 9.44612 t2 9.44612 tt4 8.88958 t4 8.88958
+Slope of X=-0.412573
+Slope of X=-0.137524
+ E 139 tt2 0 t2 0 tt4 8.75402 t4 8.75402
+Slope of X=-0.264527
+Slope of X=0.0458415
+Slope of X=0.0458415
+ E 142 tt2 9.01558 t2 9.01558 tt4 9.18717 t4 9.18717
+Slope of X=-0.183366
+ E 143 tt2 9.20861 t2 9.20861 tt4 8.47059 t4 8.47059
+Slope of X=-0.137524
+Slope of X=-0.0916829
+ E 145 tt2 9.55537 t2 9.55537 tt4 9.11113 t4 9.11113
+Slope of X=-0.0458415
+Slope of X=-0.172582
+ E 147 tt2 9.48542 t2 9.48542 tt4 6.76379 t4 8.84435
+Slope of X=0.40194
+Slope of X=0.183366
+Slope of X=0.233975
+Slope of X=-0.0602743
+Slope of X=-0.308113
+Slope of X=-0.229207
+ E 153 tt2 0 t2 0 tt4 9.21651 t4 9.21651
+Slope of X=-0.32089
+ E 154 tt2 9.24641 t2 9.24641 tt4 9.31058 t4 9.31058
+Slope of X=-0.266931
+ E 155 tt2 9.96025 t2 9.96025 tt4 11.0789 t4 13.5719
+Slope of X=-0.0290483
+ E 156 tt2 9.08642 t2 9.08642 tt4 8.79777 t4 8.79777
+Slope of X=0.0533123
+Slope of X=-0.172586
+Slope of X=-0.32089
+Slope of X=0.0916829
+Slope of X=-0.318852
+Slope of X=0.228578
+Slope of X=-0.137524
+ E 163 tt2 9.21988 t2 9.21988 tt4 8.77408 t4 8.77408
+Slope of X=0.22973
+Slope of X=0.0458415
+ E 165 tt2 9.19614 t2 9.19614 tt4 4.28466 t4 4.28466
+Slope of X=0.226961
+ E 166 tt2 9.27683 t2 9.27683 tt4 8.67639 t4 9.12336
+Slope of X=-0.229207
+ E 167 tt2 9.11181 t2 9.11181 tt4 8.80871 t4 8.80871
+Slope of X=-0
+Slope of X=0.275049
+ E 169 tt2 9.71605 t2 9.71605 tt4 0 t4 0
+Slope of X=0.16478
+Slope of X=-0.174511
+Slope of X=-0
+Slope of X=-0
+Slope of X=-0.131837
+ E 174 tt2 10.2787 t2 10.2787 tt4 9.45154 t4 9.45154
+Slope of X=0.291114
+Slope of X=-0.137524
+Slope of X=0.183366
+Slope of X=-0.0916829
+ E 178 tt2 9.37685 t2 9.37685 tt4 9.12933 t4 9.12933
+Slope of X=-0.275049
+ E 179 tt2 9.36112 t2 9.36112 tt4 9.1003 t4 9.1003
+Slope of X=-0.275049
+ E 180 tt2 9.3076 t2 9.3076 tt4 9.24789 t4 9.24789
+Slope of X=-0.183366
+Slope of X=-0.0458415
+Slope of X=0.0916829
+Slope of X=0.0458415
+Slope of X=-0.183366
+Slope of X=0.315843
+Slope of X=0.137524
+ E 187 tt2 9.38939 t2 9.38939 tt4 9.06734 t4 9.06734
+Slope of X=-0.0916829
+Slope of X=-0.137524
+Slope of X=-0.137524
+Slope of X=-0.229207
+Slope of X=0.320334
+ E 192 tt2 9.43209 t2 9.43209 tt4 9.49296 t4 9.60962
+Slope of X=-0.186581
+Slope of X=-0.32089
+Slope of X=-0.161854
+ E 195 tt2 9.08844 t2 9.08844 tt4 4.48513 t4 8.45093
+Slope of X=-0.32089
+ E 196 tt2 9.19307 t2 9.19307 tt4 9.30234 t4 9.30234
+Slope of X=-0.32089
+ E 197 tt2 9.4874 t2 9.4874 tt4 9.83579 t4 9.83579
+Slope of X=0.229207
+ E 198 tt2 9.22615 t2 9.22615 tt4 8.55651 t4 8.55651
+Slope of X=0.336578
+Slope of X=-0.0458415
+Slope of X=0.183366
+Slope of X=-0.275049
+Slope of X=0.137524
+ E 203 tt2 9.00392 t2 9.00392 tt4 8.94967 t4 8.94967
+Slope of X=-0.366732
+ E 204 tt2 0 t2 0 tt4 30.7544 t4 30.7544
+Slope of X=-0.137524
+Slope of X=-0.275049
+Slope of X=-0.0458415
+Slope of X=-0.0458415
+ E 208 tt2 0 t2 0 tt4 8.66221 t4 8.66221
+Slope of X=-0.347404
+Slope of X=-0.109035
+ E 210 tt2 9.40495 t2 9.40495 tt4 5.47081 t4 8.80286
+Slope of X=-0.275049
+Slope of X=-0.229207
+ E 212 tt2 9.1635 t2 9.1635 tt4 9.40038 t4 9.40038
+Slope of X=-0.176107
+Slope of X=0.206539
+Slope of X=0.0916829
+Slope of X=-0.194585
+Slope of X=-0.137524
+Slope of X=0.32089
+ E 218 tt2 9.17715 t2 9.17715 tt4 0 t4 0
+Slope of X=0.308258
+Slope of X=-0.275049
+ E 220 tt2 0 t2 0 tt4 8.66362 t4 8.66362
