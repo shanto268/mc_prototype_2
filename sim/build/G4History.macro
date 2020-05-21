@@ -71,5 +71,5 @@
 /run/printProgress 100
 /vis/viewer/set/style s
 /vis/viewer/refresh
-/vis/viewer/set/hiddenEdge 0
+/vis/viewer/set/hiddenEdge 1
 /vis/viewer/refresh

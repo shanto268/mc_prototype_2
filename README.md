@@ -82,7 +82,7 @@ Image showing prototype 2 design.
 
 ## Parameters:
 
-Number in each tray: 16
+Number in each tray: 31
 
 Dimensions: base 30 mm, 2.6 mm diameter hole
 
