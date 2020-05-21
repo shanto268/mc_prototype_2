@@ -215,7 +215,8 @@ G4VPhysicalVolume* B4DetectorConstruction::DefineVolumes()
     G4double p2DZwat = p2DZ;  // half hight, same as G4double p2DZ to elimate space inside iron shell between top and bottom
     G4double p2SPhiwat = 0.0;  // Delta Phi angle of the segment in radians
     G4double p2DPhiwat = 2*M_PI*rad;  // Starting Theta angle of the segment in radians
-
+    G4double tubeWaterZ = 0.0; //change rp- for placing waterinside
+   
     //rp, cylinder for iron tube start
     G4double tubeRout = 91.44*cm; // outer radius, 3 feet -> 91.44 cm
     G4double tubeRin = 0.0; // inner radius
@@ -226,15 +227,13 @@ G4VPhysicalVolume* B4DetectorConstruction::DefineVolumes()
     G4double tubeY = 0.0;
     G4double tubeZ = tubeLen - TowerLen; // z position inside mother volume (terRout = tubeRout -0.25*2.54*cm;
 
-    //rp, cylinder for water tube start
-    G4double tubeWaterRout = 50.44*cm; // outer radius, inner radius of tube (could be smaller for tube of water
+    //rp, cylinder for water tube start and air tube start
+    G4double tubeWaterRout = 0.4572*m; //change rp-outer radius, inner radius of tube (could be smaller for tube of water
+    G4double tubeAirRout = 0.9064625*m; //change rp-inner radius, Air tube to make space between iron tube and water tube.
     G4double tubeWaterRin = 0.0; // inner radius start
     G4double tubeWaterLen = tubeLen; // half hight, same as tubeLen to elimate space between shapes
     G4double Sphi = 0.0;
     G4double SThe = 2.0*M_PI*rad;
-    G4double tubeWaterX = 0.0; // Placement for inner water tube x,y,z following 
-    G4double tubeWaterY = 0.0;
-    G4double tubeWaterZ = 0.0;
 
     //rp, cylinder for iron ledge around tank
     G4double ledgeRout = 7.9*m; // outer radius, creating the ledge outside the iron shell
@@ -457,6 +456,20 @@ G4VPhysicalVolume* B4DetectorConstruction::DefineVolumes()
             0,                // copy number
             fCheckOverlaps);  // checking overlaps
 
+    auto tubeAirS //change rp-creating solid Air volume inside tube volume
+       = new G4Tubs("tubeAir",tubeWaterRin,tubeAirRout,tubeWaterLen,Sphi,SThe);
+    
+    auto tubeAirLV //change rp-creating logical volume
+       = new G4LogicalVolume(tubeAirS,defaultMaterial, "tubeAir"); //change rp-Air inside tube
+    new G4PVPlacement(
+                     0,
+                     G4ThreeVector(tubeX,tubeY,tubeWaterZ),
+                     tubeAirLV,
+                     tubeLV,
+                     false,
+                     0,
+                     fCheckOverlaps);
+   
     auto tubeWaterS // creating solid water volume inside tube volume
         = new G4Tubs("tubeWater",tubeWaterRin,tubeWaterRout,tubeWaterLen,Sphi,SThe);
 
@@ -465,7 +478,7 @@ G4VPhysicalVolume* B4DetectorConstruction::DefineVolumes()
     // creating placement for water inside tube
     new G4PVPlacement(
             0,                // no rotation
-            G4ThreeVector(tubeWaterX,tubeWaterY,tubeWaterZ),  // at (0,0,0) the middle of tube volume
+            G4ThreeVector(tubeX,tubeY,tubeWaterZ),  // at (0,0,0) the middle of tube volume
             tubeWaterLV,          // its logical volume
             "tubeWater",    // its name
             tubeLV,          // its mother  volume
@@ -784,6 +797,7 @@ auto RefPlane1LV
   //  WatTank3LV->SetVisAttributes(new G4VisAttributes(TRUE,G4Colour(1.0,0.0,0.0))); //  blue
   tubeLV->SetVisAttributes(new G4VisAttributes(TRUE,G4Colour(0.705882, 0.682353, 0.658824))); 
   tubeWaterLV->SetVisAttributes(new G4VisAttributes(TRUE,G4Colour(0.0,0.0,1.0))); // blue
+  tubeAirLV->SetVisAttributes(new G4VisAttributes(TRUE,G4Colour(0.0,0.0,1.0))); // blue
   LedgeLV->SetVisAttributes(new G4VisAttributes(TRUE,G4Colour(0.45,0.25,0.0))); 
   LegLV->SetVisAttributes(new G4VisAttributes(TRUE,G4Colour(0.705882, 0.682353, 0.658824))); 
   SC8LV->SetVisAttributes(new G4VisAttributes(TRUE,G4Colour(0.705882, 0.682353, 0.658824)));
