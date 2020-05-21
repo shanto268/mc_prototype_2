@@ -83,8 +83,11 @@ Image showing prototype 2 design.
 ## Parameters:
 
 Number in each tray: 16
+
 Dimensions: base 30 mm, 2.6 mm diameter hole
+
 4 layer structure (xy + xy) similar to prototype-1
+
 Total area of tray: 60 x 60 cm^2
 
 # Issues/To Do
