@@ -7,6 +7,12 @@
 #$-q serial
 #$-P grid
 #   XSHFIT 0 for camera 1,  -40000 in mm= -40mm for camera 2, 40000 for camera 3
+source muonSetupMac.sh
+cd build
+cmake .. 
+make
+cd ..
+
 export G4CRYXSHIFT=0     # in mm
 export G4CRYYSHIFT=0     # in mm
 export G4CRYZSHIFT=1500  # in mm
@@ -16,4 +22,4 @@ export CRYRANDOMSEED=1236
 # env
 export DYLD_LIBRARY_PATH=/Applications/root_v6.18.00/lib
 
-/Users/sshanto/hep/wtp_mc/monte_carlo_sim_muon_detector-wtp-master/sim/build/exampleB4a -m batch_run.mac
+build/exampleB4a -m batch_run.mac
