@@ -14,7 +14,7 @@
 /run/initialize
 /event/verbose 0
 /run/verbose 0
-/run/beamOn 1000
+/run/beamOn 20000 
 # comment out "exit" in the next line, to keep the display window.
 # exit
 

@@ -32,18 +32,23 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
   set(CMAKE_CROSSCOMPILING "FALSE")
 endif()
 
+# Set default install directory permissions.
+if(NOT DEFINED CMAKE_OBJDUMP)
+  set(CMAKE_OBJDUMP "/Library/Developer/CommandLineTools/usr/bin/objdump")
+endif()
+
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "/Users/sshanto/hep/wtp_mc/mc_prototype2/sim/build/exampleB4a")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/exampleB4a" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/exampleB4a")
     execute_process(COMMAND /usr/bin/install_name_tool
-      -delete_rpath "/Applications/root_v6.18.00/lib"
+      -delete_rpath "/Applications/root_v6.22.02/lib"
       "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/exampleB4a")
     execute_process(COMMAND /usr/bin/install_name_tool
       -delete_rpath "/Users/sshanto/hep/g4/geant4.10.06.p01-install/lib"
       "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/exampleB4a")
     execute_process(COMMAND /usr/bin/install_name_tool
-      -delete_rpath "/Users/sshanto/opt/anaconda3/envs/main/lib"
+      -delete_rpath "/Users/sshanto/anaconda3/lib"
       "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/exampleB4a")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/Library/Developer/CommandLineTools/usr/bin/strip" -u -r "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/exampleB4a")

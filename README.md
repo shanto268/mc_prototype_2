@@ -90,13 +90,17 @@ Dimensions: base 30 mm, 2.6 mm diameter hole
 
 Total area of tray: 60 x 60 cm^2
 
-# Issues/To Do
-
+# Issues
 - [ ] There seems to be an error with coordinate range for xyatZ 2D histograms, so further analysis is being conducted. -> rp code errors (problem in analysis file)
 - [ ] Need to create output file
 - [ ] Create output file, finish event reconstruction code
 - [ ] Readout of events need to be implemented in analysis code
 - [ ] New logic for scintillator arrangement needs to implemented
+
+# To-Do
+-[] Organize the code base
+-[] Tackle the issues
+
 
 # Interactive Simulation 
 Some example pictures showing the water tower, the telescope and the muon shower in the interactive simulation.

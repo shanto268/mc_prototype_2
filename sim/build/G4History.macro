@@ -69,7 +69,3 @@
 /gui/addButton viewer "Flush viewer (= refresh + update)" "/vis/viewer/flush"
 /gui/addButton viewer "Update scene" "/vis/scene/notifyHandlers"
 /run/printProgress 100
-/vis/viewer/set/style s
-/vis/viewer/refresh
-/vis/viewer/set/hiddenEdge 1
-/vis/viewer/refresh

@@ -53,19 +53,19 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  "/Applications/root_v6.18.00/include"
+  "/Applications/root_v6.22.02/include"
   "../include"
   "/Users/sshanto/hep/g4/geant4.10.06.p01-install/include/Geant4"
   "/usr/X11R6/include"
   "/Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/OpenGL.framework"
-  "/Users/sshanto/opt/anaconda3/envs/main/include/qt"
-  "/Users/sshanto/opt/anaconda3/envs/main/include/qt/QtGui"
+  "/Users/sshanto/anaconda3/include/qt"
+  "/Users/sshanto/anaconda3/include/qt/QtGui"
   "/Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/OpenGL.framework/Headers"
-  "/Users/sshanto/opt/anaconda3/envs/main/include/qt/QtCore"
-  "/Users/sshanto/opt/anaconda3/envs/main/./mkspecs/macx-clang"
-  "/Users/sshanto/opt/anaconda3/envs/main/include/qt/QtWidgets"
-  "/Users/sshanto/opt/anaconda3/envs/main/include/qt/QtPrintSupport"
-  "/Users/sshanto/opt/anaconda3/envs/main/include/qt/QtOpenGL"
+  "/Users/sshanto/anaconda3/include/qt/QtCore"
+  "/Users/sshanto/anaconda3/./mkspecs/macx-clang"
+  "/Users/sshanto/anaconda3/include/qt/QtWidgets"
+  "/Users/sshanto/anaconda3/include/qt/QtPrintSupport"
+  "/Users/sshanto/anaconda3/include/qt/QtOpenGL"
   "/usr/local/include"
   )
 
