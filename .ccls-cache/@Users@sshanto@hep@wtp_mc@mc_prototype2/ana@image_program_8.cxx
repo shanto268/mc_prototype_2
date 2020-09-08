@@ -12,14 +12,14 @@
     TFile *f1 = new TFile("output_proto2_3mil_45deg_away.root","READ"); //away
     TFile *f2 = new TFile("output_proto2_3mil_45deg_tank.root","READ"); //towards
 
-    TH1D* x7away=(TH1D*)f1->Get("xZ5");
-    TH1D* x7tank=(TH1D*)f2->Get("xZ5");
+    TH1D* x7away=(TH1D*)f1->Get("xZ8");
+    TH1D* x7tank=(TH1D*)f2->Get("xZ8");
 
-    TH1D* y7away=(TH1D*)f1->Get("yZ5");
-    TH1D* y7tank=(TH1D*)f2->Get("yZ5");
+    TH1D* y7away=(TH1D*)f1->Get("yZ8");
+    TH1D* y7tank=(TH1D*)f2->Get("yZ8");
 
-    TH2D* xy7away=(TH2D*)f1->Get("xyZ5");
-    TH2D* xy7tank=(TH2D*)f2->Get("xyZ5");
+    TH2D* xy7away=(TH2D*)f1->Get("xyZ8");
+    TH2D* xy7tank=(TH2D*)f2->Get("xyZ8");
     /*
        int nx1d=x7away->GetNbinsX();
        double xmin1d=-200.0;
@@ -66,7 +66,7 @@
             //cout<<"wt = "<<wtT<<endl;
             if(wt>1.0) wt=1.0;
             //cout<<"wt "<<wt<<"\n";
-            int sizeOfBox = 2.0; //
+            int sizeOfBox = 2; //
             double widthOfHisto = 20.0;
 
             double y=widthOfHisto-sizeOfBox*ix+sizeOfBox/2.0;
