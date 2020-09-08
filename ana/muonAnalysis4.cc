@@ -98,19 +98,6 @@ AnaMuon::AnaMuon(TFile * fout) {
     //new code: start
     histo1D["nHits"]=new TH1D("nHits","numbe of hits",40,0.,40.);
     histo1D["LayerNum"]=new TH1D("LayerNum","Layer Number",5,0.,5.);
-    histo1D["L0Ch"]=new TH1D("L0Ch","L0 Channel Numbers",35,0.,35.);
-    histo1D["L0Ch"]->GetXaxis()->SetTitle("Ch number 0 to 32");
-    histo1D["L0Ch"]->GetYaxis()->SetTitle("Number of hits");
-    histo1D["L1Ch"]=new TH1D("L1Ch","L1 Channel Numbers",35,0.,35.);
-    histo1D["L1Ch"]->GetXaxis()->SetTitle("Ch number 0 to 32");
-    histo1D["L1Ch"]->GetYaxis()->SetTitle("Number of hits");
-    histo1D["L2Ch"]=new TH1D("L2Ch","L2 Channel Numbers",35,0.,35.);
-    histo1D["L2Ch"]->GetXaxis()->SetTitle("Ch number 0 to 32");
-    histo1D["L2Ch"]->GetYaxis()->SetTitle("Number of hits");
-    histo1D["L3Ch"]=new TH1D("L3Ch","L3 Channel Numbers",35,0.,35.);
-    histo1D["L3Ch"]->GetXaxis()->SetTitle("Ch number 0 to 32");
-    histo1D["L3Ch"]->GetYaxis()->SetTitle("Number of hits");
-
     //New Code start: SAS --> 32/20  
     histo1D["L0Ch_new"]=new TH1D("L0Ch_new","L0 Channel Numbers",35,0.,35.);
     histo1D["L0Ch_new"]->GetXaxis()->SetTitle("Ch number 0 to 32");
@@ -319,29 +306,23 @@ void AnaMuon::analyze(sc8muontree ev) {
         }
     }
 
-    //   RPs code...
+    //double hitsArr[] = {ev.EdepS1, ev.EdepS2, ev.EdepS3, ev.EdepS4};
+    //for (int i=0; i<4; i++) {
+        ////for looping through each scincillator bar in each layer, will have four of these for loops
+        //int mNBar=32;
+        //for (int j=0; j<mNBar; j++) {
+            //double edep1=ev.EdepS1[i];
+            //double edep2=ev.EdepS2[i];
+            //double edep3=ev.EdepS3[i];
+            //double edep4=ev.EdepS4[i];
+            //string hname="EdepL"+to_string(i)+"Ch"+to_string(j);
+            //histo1D[hname]->Fill
+        //}
+    //}
+
     for(int i=0; i<32; i++) {
         // nhits=0;
         // double s1hity,s2hitx, s3hity, s4hitx;
-        double edep1=ev.EdepS1[i];
-        double edep2=ev.EdepS2[i];
-        double edep3=ev.EdepS3[i];
-        double edep4=ev.EdepS4[i];
-        double e_cut=7.0; //threshold energy
-
-        if(edep1>e_cut) {
-            histo1D["L0Ch"]->Fill(i);
-        }
-        if(edep2>e_cut) {
-            histo1D["L1Ch"]->Fill(i);
-        }
-        if(edep3>e_cut) {
-            histo1D["L2Ch"]->Fill(i);
-        }
-        if(edep4>e_cut) {
-            histo1D["L3Ch"]->Fill(i);
-        }
-
         double edep32=ev.EdepS1[i];
         double edep22=ev.EdepS2[i];
         double edep33=ev.EdepS3[i];
@@ -360,7 +341,6 @@ void AnaMuon::analyze(sc8muontree ev) {
         if(edep44>ecut) {
             histo1D["L3Ch_new"]->Fill(i);
         }
-
     }   // end of for-loop over scint bars...
 
     //   end of RP on number of hits.

@@ -575,7 +575,7 @@ G4VPhysicalVolume* B4DetectorConstruction::DefineVolumes()
   G4double StationSizeZ  = 150.*cm;
 
   G4RotationMatrix* stationRot = new G4RotationMatrix; // Rotates X and Z axes only
-  double  angle = 0.0*M_PI/180.0;   // no camera rotation.
+  double  angle = 45.0*M_PI/180.0;   //
   std::cout<<"B4DetectorConstruction:  angle="<<angle<<std::endl;
   stationRot -> rotateX(0.*rad);
   stationRot -> rotateY(-angle*rad);
